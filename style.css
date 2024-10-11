@@ -1,0 +1,120 @@
+:root {
+  --light-coral: #e56b6f;
+  --lighter-coral: #ff8589;
+  --buff: #eaac8b;
+  --dark-buff: #844625;
+  --china-rose: #b56576;
+  --chinese-violet: #6d597a;
+  --yimn-blue: #355070;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p,
+input,
+label,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+header {
+  display: flex;
+  background-color: var(--light-coral);
+  align-items: center;
+  justify-content: center;
+  padding: 2.75rem;
+}
+header div {
+  text-align: center;
+
+  font-size: 2rem;
+  color: var(--buff);
+}
+.imc {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  color: var(--buff);
+  padding: 2rem 0;
+}
+main {
+  background-color: var(--china-rose);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  gap: 2rem;
+}
+.formulario h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.campos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+.campo input {
+  padding: 1rem;
+  border: none;
+  color: var(--buff);
+  border-radius: 8px;
+  border: 1px solid var(--buff);
+  background-color: transparent;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+.campo input::placeholder {
+  color: var(--buff);
+}
+.campo input:focus {
+  background-color: var(--lighter-coral);
+  color: var(--dark-buff);
+}
+.campo input:focus::placeholder {
+  color: var(--dark-buff);
+}
+
+.imc img {
+  width: 400px;
+  height: 600px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.imc button {
+  padding: 1.5rem 3rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  color: var(--chinese-violet);
+  background-color: var(--buff);
+  transition: background-color 0.3s ease-out;
+}
+.imc button:hover {
+  background-color: var(--chinese-violet);
+  color: whitesmoke;
+}
+
+footer {
+  background-color: var(--light-coral);
+  color: var(--buff);
+  padding: 0.75rem 0;
+  text-align: center;
+}
