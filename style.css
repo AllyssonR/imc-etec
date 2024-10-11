@@ -111,7 +111,28 @@ form {
   background-color: var(--chinese-violet);
   color: whitesmoke;
 }
-
+#result {
+  margin-top: 2rem;
+  border-top: 1px solid var(--buff);
+  padding: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+.your-imc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.your-imc strong {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.description p {
+  width: 13rem;
+  line-height: 1.7;
+  border: 1px solid red;
+}
 footer {
   background-color: var(--light-coral);
   color: var(--buff);
