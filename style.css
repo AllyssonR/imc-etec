@@ -128,14 +128,17 @@ form {
   font-size: 2rem;
   font-weight: normal;
 }
-.description p {
+#description  {
   width: 13rem;
   line-height: 1.7;
-  border: 1px solid red;
 }
 footer {
   background-color: var(--light-coral);
   color: var(--buff);
   padding: 0.75rem 0;
   text-align: center;
+}
+.hidden{
+  display: none;
+  visibility: hidden;
 }
