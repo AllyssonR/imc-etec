@@ -25,6 +25,6 @@ form.addEventListener("submit", (event) => {
     description = `Alerta máximo,${nome} você está com obesidade grau III (mórbida)!`;
   }
 
-  value.textContent = imc;
+  value.textContent = imc.replace(".", ",");
   document.getElementById("description").textContent = description;
 });
