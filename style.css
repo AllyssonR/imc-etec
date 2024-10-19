@@ -92,6 +92,11 @@ form {
   color: var(--dark-buff);
 }
 
+.campo input::-webkit-outer-spin-button,
+.campo input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
 .imc img {
   width: 400px;
   height: 600px;
@@ -128,7 +133,7 @@ form {
   font-size: 2rem;
   font-weight: normal;
 }
-.description p {
+#description {
   width: 13rem;
   line-height: 1.7;
 }
@@ -137,4 +142,18 @@ footer {
   color: var(--buff);
   padding: 0.75rem 0;
   text-align: center;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/*responsividade*/
+@media screen and (max-width: 1024px) {
+  img {
+    display: none;
+  }
+  body {
+    overflow: hidden;
+  }
 }
